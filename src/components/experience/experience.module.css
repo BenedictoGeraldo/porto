@@ -1,0 +1,108 @@
+.experienceSection {
+  max-width: 900px;
+  margin: 4rem auto;
+  padding: 0 1rem;
+}
+
+.experienceSection h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #bb86fc;
+}
+
+/* Garis tengah timeline */
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 3px;
+  background-color: #3f3f3f;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -1.5px;
+}
+
+/* Kontainer item */
+.timelineItem {
+  padding: 10px 40px;
+  position: relative;
+  width: 50%;
+}
+
+/* Lingkaran pada garis */
+.timelineItem::after {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  right: -8px;
+  background-color: #121212;
+  border: 3px solid #bb86fc;
+  top: 20px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Item di kiri */
+.left {
+  left: 0;
+}
+
+.left::before { /* panah */
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid #2a2a2a;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent #2a2a2a;
+}
+
+.left::after {
+  right: -8px;
+}
+
+/* Item di kanan */
+.right {
+  left: 50%;
+}
+
+.right::before { /* panah */
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid #2a2a2a;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #2a2a2a transparent transparent;
+}
+
+.right::after {
+  left: -8px;
+}
+
+/* Konten di dalam item */
+.timelineContent {
+  padding: 20px;
+  background-color: #1e1e1e;
+  border: 1px solid #2a2a2a;
+  border-radius: 6px;
+}
+
+.timelineContent h3 {
+  margin-top: 0;
+  color: #bb86fc;
+}
