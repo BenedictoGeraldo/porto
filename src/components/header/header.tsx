@@ -6,7 +6,7 @@ const Header: React.FC = () => {
   return (
     <header className={styles.header}>
       <div className={styles.logo}>
-        NAMA_PANGGILAN_ANDA
+        Benedicto Geraldo
       </div>
       <nav className={styles.socialIcons}>
         <a href="https://www.linkedin.com/in/benedicto-geraldo/" target="_blank" rel="noopener noreferrer">

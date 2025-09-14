@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './experience.module.css';
+import styles from './Experience.module.css';
 
 const experiences = [
     {
