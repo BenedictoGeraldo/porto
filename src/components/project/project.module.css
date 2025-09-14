@@ -1,0 +1,55 @@
+.projectsSection {
+  max-width: 1200px;
+  margin: 4rem auto;
+  padding: 0 1rem;
+}
+
+.projectsSection h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #bb86fc;
+}
+
+.projectsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.projectCard {
+  background-color: #1e1e1e;
+  border: 1px solid #2a2a2a;
+  padding: 1.5rem;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projectCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(187, 134, 252, 0.1);
+}
+
+.projectCard h3 {
+  margin-top: 0;
+}
+
+.githubLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: auto; /* Mendorong link ke bawah */
+  padding: 0.5rem 1rem;
+  background-color: #bb86fc;
+  color: #121212;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.githubLink:hover {
+  background-color: #a062f8;
+}
