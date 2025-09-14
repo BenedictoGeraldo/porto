@@ -1,0 +1,17 @@
+.aboutSection {
+  text-align: center;
+  max-width: 800px;
+  margin: 4rem auto;
+  padding: 0 1rem;
+}
+
+.aboutSection h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #bb86fc;
+}
+
+.aboutSection p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
